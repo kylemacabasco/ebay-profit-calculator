@@ -28,13 +28,9 @@ function calculateResults() {
   const item = parseFloat(costOfItem.value);
   const ebayFee = (principal * .10).toFixed(2)
   const paypalFee = ((principal * .029) + .30).toFixed(2)
-  
-  console.log(paypalFee)
-  console.log(ebayFee)
 
 
-  // Compute monthly payments
-  // const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+  // Compute total amount 
   const total = principal - ebayFee - paypalFee - shipping
 
   if (isFinite(total)) {

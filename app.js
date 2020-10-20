@@ -15,7 +15,7 @@ document.getElementById('ebay-profit-form').addEventListener('submit', function 
 
 //Calculate Results
 function calculateResults() {
-  console.log('Calculating.....')
+  
   // UI Vars
   const grossSale = document.getElementById('gross-sale');
   const shippingCost = document.getElementById('shipping-cost');
